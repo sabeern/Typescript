@@ -37,3 +37,18 @@ const testFunction2 = (val1: obj): void => {
 };
 
 let c = testFunction2({ name: "sabeer", mark: 33 });
+
+let msgFunction: (a: string, b: string) => void;
+msgFunction = (name: string, msg: string) => {
+  console.log(`${name} says ${msg}`);
+};
+msgFunction("anees", "welcome");
+
+let sumFunction: (a: number, b: number, c: string) => number;
+sumFunction = (num1: number, num2: number, type: string) => {
+  if (type == "sum") return num1 + num2;
+  else return num1 - num2;
+};
+
+let res2 = sumFunction(4, 3, "sum");
+console.log(res2);
