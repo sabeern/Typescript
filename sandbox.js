@@ -1,27 +1,38 @@
-var character = "sabeer";
-var age = 20;
-var isPassed = true;
+//expicit types
+var character;
 character = "anees";
-age = 23;
-isPassed = false;
-var circ = function (diameter) {
-    console.log(diameter * Math.PI);
-};
-circ(5);
-var arr1 = ["orange", "apple", "banana"];
-var arr2 = [45, 3, 6, 9];
-arr1[0] = "mango";
-//arr1[1] = 30;
-arr2.push(35);
-//arr2.push('anees');
-var mixed = ["orange", 2, 3, "grapes"];
-mixed[0] = 4;
-var obj = { name: "sabeer", age: 23, place: "malappuram" };
-obj.name = "anees";
-//obj.age = '3';
-//obj.mark = 33;
-obj = {
-    name: "fahiz",
-    age: 21,
-    place: "kondotty",
-};
+//character = 20; not allowed
+var num;
+num = 25;
+//num = 's'; not allowed
+var isPassed;
+isPassed = true;
+//isPassed = 'yes'; not allowed;
+var val;
+val = 24;
+val = "sabeer";
+val = false;
+var arr;
+var arr2 = [];
+arr2.push(2);
+//arr2.push('apple');
+var arr3 = [];
+arr3.push(3);
+arr3.push("anees");
+arr3.push(false);
+console.log(arr3);
+var arr4 = [];
+arr4.push(4);
+arr4.push("orange");
+arr4.push(false);
+console.log(arr4);
+var obj;
+obj = { name: "anees", mark: 33 };
+obj = [32, 56, "apple"];
+var obj2;
+obj2 = { name: "fahiz", age: 33, text: "test" };
+console.log(obj2);
+var variable;
+variable = 33;
+variable = "apple";
+console.log(variable);

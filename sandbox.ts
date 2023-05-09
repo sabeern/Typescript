@@ -1,38 +1,50 @@
-let character = "sabeer";
-let age = 20;
-let isPassed = true;
+//expicit types
+
+let character: string;
 
 character = "anees";
+//character = 20; not allowed
 
-age = 23;
+let num: number;
 
-isPassed = false;
+num = 25;
+//num = 's'; not allowed
 
-const circ = (diameter: number) => {
-  console.log(diameter * Math.PI);
-};
+let isPassed: boolean;
 
-circ(5);
+isPassed = true;
+//isPassed = 'yes'; not allowed;
 
-const arr1 = ["orange", "apple", "banana"];
-const arr2 = [45, 3, 6, 9];
+let val: any;
+val = 24;
+val = "sabeer";
+val = false;
 
-arr1[0] = "mango";
-//arr1[1] = 30;
-arr2.push(35);
-//arr2.push('anees');
+let arr: string[];
+let arr2: number[] = [];
+arr2.push(2);
+//arr2.push('apple');
+let arr3: (number | string | boolean)[] = [];
+arr3.push(3);
+arr3.push("anees");
+arr3.push(false);
+console.log(arr3);
 
-const mixed = ["orange", 2, 3, "grapes"];
+let arr4: any[] = [];
+arr4.push(4);
+arr4.push("orange");
+arr4.push(false);
+console.log(arr4);
 
-mixed[0] = 4;
+let obj: object;
+obj = { name: "anees", mark: 33 };
+obj = [32, 56, "apple"];
 
-let obj = { name: "sabeer", age: 23, place: "malappuram" };
+let obj2: { name: string; age: number; text: any };
+obj2 = { name: "fahiz", age: 33, text: "test" };
+console.log(obj2);
 
-obj.name = "anees";
-//obj.age = '3';
-//obj.mark = 33;
-obj = {
-  name: "fahiz",
-  age: 21,
-  place: "kondotty",
-};
+let variable: string | number;
+variable = 33;
+variable = "apple";
+console.log(variable);
